@@ -1,7 +1,26 @@
-.container {
+.container1 {
   border: solid;
   border-radius: 20px;
-  margin: 10px;
+  margin: auto;
+  margin-top: 200px;
   padding: 20px;
-  border-color:grey;
+  border-color: transparent;
+  background-color:rgb(248, 240, 240) ;
+  width: 70%;
+}
+
+body {
+  
+}
+
+.container2 {
+  display: none;
+  border: solid;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-color: transparent;
+  background-color:rgb(248, 240, 240) ;
+  width: 70%;
 }
