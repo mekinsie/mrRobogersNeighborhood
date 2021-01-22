@@ -14,18 +14,30 @@ $(document).ready(function(){
     if (i === 0) {
       result.push(i + " ");
     }
-    else if (i === 1) {
+    else if (i % 10 == 1) {
       result.push(i + " ");
       result[i] = "Beep! "
     }
-    else if (i ===2) {
+    else if (i % 10 ==2) {
       result.push(i + " ");
       result[i] = "Boop! "
     }
-    else if (i ===3) {
+    else if (i % 10 ==3) {
       result.push(i+ " ");
-      result[i] = "Won't you be my nieghbor? "
+      result[i] = "Won't you be my neighbor? "
     }
+    // else if (i % 30 ) {
+    //   result.push(i+ " ");
+    //   result[i] = "Won't you be my neighbor? "
+    // }
+    // else if (i % 20 ) {
+    //   result.push(i+ " ");
+    //   result[i] = "Boop! "
+    // }
+    // else if (i % 10 ) {
+    //   result.push(i+ " ");
+    //   result[i] = "Beep! "
+    // }
     else if (i != 1) {
     result.push(i+ ", ");
     }

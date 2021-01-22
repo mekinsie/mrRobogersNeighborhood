@@ -10,19 +10,23 @@ if else for beep and boop
 **Specs**
 
 Describe: arrayReturn()
-Test: "It should return an array with 0 if the number 0 is inputted."
+Test1: "It should return an array with 0 if the number 0 is inputted."
 Expect (arrayReturn(0)).toEqual([0]);
 
-Test: "It should return an array that counts up from 0 to the inputted number."
+Test2: "It should return an array that counts up from 0 to the inputted number."
 Expect (arrayReturn(5)).toEqual([0,1,2,3,4,5]);
 
-Test: "It should return an array that counts up from 0 to the inputted number except for the number 1, which will be replaced with 'Beep!'."
+Test3: "It should return an array that counts up from 0 to the inputted number except for the number 1, which will be replaced with 'Beep!'."
 Expect (arrayReturn(5)).toEqual([0,"Beep!",2,3,4,5]);
 
-Test: "It should return an array that counts up from 0 to the inputted number except for the numbers that contain a 1, 2, or 3 which will be replaced with specialized messages."
-Expect (arrayReturn(3)).toEqual(["Wont you be my neighbor?]);
+Test4: "It should return an array that counts up from 0 to the inputted number except for the numbers that contain a 1, 2, or 3 which will be replaced with specialized messages."
+Expect (arrayReturn(3)).toEqual(["Wont you be my neighbor?"]);
 
-Test: "It should return an array that counts up from 0 to the inputted number except for the numbers that contain a 1, 2, or 3 which will be replaced with specialized messages with specificity of the order of the numbers"
-Expect (arrayReturn(32)).toEqual(["Wont you be my neighbor?]);
+Test5: "It should return a specialized message if the number is greater than 9 and contains any of the digits 1,2 and 3."
+Expect (arrayReturn(10)).toEqual(["Beep!"]);
+
+Test6: "Number 3 message is prioritized over 2, and 2 prioritized over 1 for numbers with multiple digits."
+Expect (arrayReturn(32)).toEqual(["Wont you be my neighbor?"]);
+
 
 
