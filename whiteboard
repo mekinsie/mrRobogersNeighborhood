@@ -16,10 +16,13 @@ Expect (arrayReturn(0)).toEqual([0]);
 Test: "It should return an array that counts up from 0 to the inputted number."
 Expect (arrayReturn(5)).toEqual([0,1,2,3,4,5]);
 
-Test: "It should return an array that counts up from 0 to the inputted number except for the number1, which will be replaced with 'Beep!'."
+Test: "It should return an array that counts up from 0 to the inputted number except for the number 1, which will be replaced with 'Beep!'."
 Expect (arrayReturn(5)).toEqual([0,"Beep!",2,3,4,5]);
 
-Test: "It should return an array with 0 if the number 0 is inputted."
-Expect (arrayReturn(0)).toEqual([0]);
+Test: "It should return an array that counts up from 0 to the inputted number except for the numbers that contain a 1, 2, or 3 which will be replaced with specialized messages."
+Expect (arrayReturn(3)).toEqual(["Wont you be my neighbor?]);
+
+Test: "It should return an array that counts up from 0 to the inputted number except for the numbers that contain a 1, 2, or 3 which will be replaced with specialized messages with specificity of the order of the numbers"
+Expect (arrayReturn(32)).toEqual(["Wont you be my neighbor?]);
 
 
