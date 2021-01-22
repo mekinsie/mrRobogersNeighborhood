@@ -1,0 +1,25 @@
+takes a number
+returns a RANGE of numbers from 0 to the user inputted number
+
+FOR LOOP to specify what to increase the increment by ++1
+start at 0
+end at inputted number
+
+if else for beep and boop
+
+Specs
+
+Describe: arrayReturn()
+Test: "It should return an array with 0 if the number 0 is inputted."
+Expect (arrayReturn(0)).toEqual([0]);
+
+Test: "It should return an array that counts up from 0 to the inputted number."
+Expect (arrayReturn(5)).toEqual([0,1,2,3,4,5]);
+
+Test: "It should return an array that counts up from 0 to the inputted number except for the number1, which will be replaced with 'Beep!'."
+Expect (arrayReturn(5)).toEqual([0,"Beep!",2,3,4,5]);
+
+Test: "It should return an array with 0 if the number 0 is inputted."
+Expect (arrayReturn(0)).toEqual([0]);
+
+

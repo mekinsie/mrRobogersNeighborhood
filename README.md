@@ -1,6 +1,6 @@
-# _Mr Roboger's Neighborhood_
+# _Mr. Roboger's Neighborhood_
 
-#### _Won't you be my neighbor?._
+#### _Won't you be my neighbor?_
 
 #### By _**Mekinsie Callahan**_
 
@@ -38,4 +38,4 @@ Reach me: via <a href="https://www.linkedin.com/in/mekinsie/" target="_blank">Li
 
 Checkout my <a href="https://github.com/mekinsie" target="_blank">github</a>.
 
-Copyright (c) 2021 **_{List of contributors or company name}_**
+Copyright (c) 2021 **_Mekinsie Callahan_**
