@@ -7,7 +7,7 @@ end at inputted number
 
 if else for beep and boop
 
-Specs
+**Specs**
 
 Describe: arrayReturn()
 Test: "It should return an array with 0 if the number 0 is inputted."
