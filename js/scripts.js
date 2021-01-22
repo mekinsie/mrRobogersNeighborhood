@@ -6,11 +6,15 @@
 $(document).ready(function(){
   $("form.form").submit(function(event){
     event.preventDefault();
-    let number = $("input#number").val();
-    $("#result").append(number);
-  });
-  console.log(number);
-});
+    let number = parseInt($("input#number").val());
+    let result = [];
+    console.log(number);
 
-//let newArray = number
-//for (i=0; i <= number; i ++ )
+    for (let i=0; i <= number; i ++) {
+      result.push(i);
+    }
+    $("#output").append(result);
+    console.log(result);
+  });
+  
+});
