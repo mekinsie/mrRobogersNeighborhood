@@ -11,7 +11,7 @@ body {
   border: solid;
   border-radius: 20px;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 60px;
   padding: 20px;
   border-color: transparent;
   background-color:rgb(246, 231, 231) ;
@@ -19,7 +19,7 @@ body {
 }
 .heading {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 70px;
   color: rgb(100, 100, 100);
   font-weight:bolder;
 }
