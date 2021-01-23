@@ -18,7 +18,6 @@ $(document).ready(function(){
       else {
         result.push(array[i]+ ", ");
       }    
-      console.log(array);
     }
     $(".container2").show();
     $("#output").append(result);
