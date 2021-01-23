@@ -4,16 +4,16 @@ $(document).ready(function(){
     let number =$("input#number").val();
     let result = [];
     for (let i=0; i <= number; i ++) {
-      if (i === 21) {
-        result.push("Boop! ");
-      }
-      else if (i === (31 || 33)) {
-        result.push("Won't you be my neighbor? ");
-      }
-      else if (i === 32) {
-        result.push("Won't you be my neighbor? ");
-      }
-      else if (i % 10 == 1) {
+      // if (i === 21) {
+      //   result.push("Boop! ");
+      // }
+      // else if (i === (31 || 33)) {
+      //   result.push("Won't you be my neighbor? ");
+      // }
+      // else if (i === 32) {
+      //   result.push("Won't you be my neighbor? ");
+      // }
+      if (i % 10 == 1) {
         result.push("Beep! ");
       }
       else if (i % 10 == 2) {
