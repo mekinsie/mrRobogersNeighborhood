@@ -1,24 +1,9 @@
-let priorityFunction = function (x,i){
-  x % i == x
-}
-
 $(document).ready(function(){
   $("form.form").submit(function(event){
     event.preventDefault();
     let number =$("input#number").val();
     let result = [];
-    
     for (let i=0; i <= number; i ++) {
-      // if (i === 21) {
-      //   result.push("Boop! ");
-      // }
-      // else if (i === (31 || 33)) {
-      //   result.push("Won't you be my neighbor? ");
-      // }
-      // else if (i === 32) {
-      //   result.push("Won't you be my neighbor? ");
-      // }
-
       if (i % 100 == 31) {
         result.push("Won't you be my neighbor? ");
       }
