@@ -1,6 +1,5 @@
 // Business Logic
-function numberMessage(result) {
-  let number =$("input#number").val();
+function numberMessage(result, number) {
   let array = [];
   for (let i=0; i <= number; i ++) {
     array.push(i.toString());
@@ -23,8 +22,10 @@ function numberMessage(result) {
 $(document).ready(function(){
   $("form.form").submit(function(event){
     event.preventDefault();
-    let result = [];
-    numberMessage(result);
+    let number =$("input#number").val();
+    let result = []
+
+    numberMessage(result, number);
     $(".container2").show();
     $("#output").empty();
     $("#output").append(result);
