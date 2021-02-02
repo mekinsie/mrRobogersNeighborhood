@@ -1,6 +1,7 @@
 // Business Logic
-function numberMessage(result, number) {
+function numberMessage(number) {
   let array = [];
+  let result = [];
   for (let i=0; i <= number; i ++) {
     array.push(i.toString());
     if (array[i].includes("3")) {
@@ -14,8 +15,9 @@ function numberMessage(result, number) {
     }
     else {
       result.push(array[i]+ ", ");
-    }    
+    }      
   } 
+  return result
 }
 
 //UI Logic
@@ -23,11 +25,10 @@ $(document).ready(function(){
   $("form.form").submit(function(event){
     event.preventDefault();
     let number =$("input#number").val();
-    let result = []
-
-    numberMessage(result, number);
+    
+    newResult = numberMessage(number);
     $(".container2").show();
     $("#output").empty();
-    $("#output").append(result);
+    $("#output").append(newResult);
   });
 });
